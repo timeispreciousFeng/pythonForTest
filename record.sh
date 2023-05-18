@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 git pull
-date_str=$(date '+%Y-%m-%d %H:%M')
+date_str=$(TZ=':Asia/Shanghai' date '+%Y-%m-%d %T')
 echo "${date_str}: Record it" > ./README.md
 
 git add ./README.md
